@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2021_04_06_161128) do
 
   create_table "trades", force: :cascade do |t|
     t.string "coin_id"
-    t.string "type"
+    t.string "transaction_type"
     t.string "logo"
     t.string "sym"
     t.integer "qty"
@@ -40,7 +40,8 @@ ActiveRecord::Schema.define(version: 2021_04_06_161128) do
 
   create_table "users", force: :cascade do |t|
     t.string "email"
-    t.decimal "balance"
+    t.string "password_digest"
+    t.decimal "balance", default: "100000.0"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
