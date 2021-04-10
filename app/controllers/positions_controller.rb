@@ -46,6 +46,6 @@ class PositionsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def position_params
-      params.require(:position).permit(:coin_id, :logo, :sym, :qty, :cost, :user_id)
+      params.require(:position).permit(:coin_id, :coin_name, :logo, :symbol, :qty, :cost, :user_id)
     end
 end
