@@ -17,8 +17,9 @@ ActiveRecord::Schema.define(version: 2021_04_06_161128) do
 
   create_table "positions", force: :cascade do |t|
     t.string "coin_id"
+    t.string "coin_name"
     t.string "logo"
-    t.string "sym"
+    t.string "symbol"
     t.integer "qty"
     t.decimal "cost"
     t.integer "user_id"
@@ -28,9 +29,10 @@ ActiveRecord::Schema.define(version: 2021_04_06_161128) do
 
   create_table "trades", force: :cascade do |t|
     t.string "coin_id"
+    t.string "coin_name"
     t.string "transaction_type"
     t.string "logo"
-    t.string "sym"
+    t.string "symbol"
     t.integer "qty"
     t.decimal "cost"
     t.integer "user_id"
