@@ -1,24 +1,43 @@
-# README
+# Crypto Trading Simulator v2 (Backend)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Crypto Trading Simulator v2 Baclend Ruby on Rails API used to communicate and run CRUD actions to our PostgreSQL database. The Rails API will be making use of Active Model Serializers to serialize the data we’re sending back to the frontend.
 
-Things you may want to cover:
+### Frontend Repo
 
-* Ruby version
+[Crypto Trading Simulator v2 (Frontend)](https://github.com/charlesangelolai/crypto-trading-simulator-v2-frontend)
 
-* System dependencies
+## Installation
 
-* Configuration
+1. Clone GitHub repository.
 
-* Database creation
+```bash
+$ git clone https://github.com/charlesangelolai/crypto-trading-simulator-v2-backend
+```
 
-* Database initialization
+2. Run bundle install inside the project folder
 
-* How to run the test suite
+```bash
+$ bundle install
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+3. Create, migrate, and seed our database using rails.
 
-* Deployment instructions
+```bash
+$ rails db:create
+$ rails db:migrate
+$ rails db:seed
+```
 
-* ...
+## Usage
+
+1. Run rails s inside the project folder's console
+
+```bash
+$ rails s
+```
+
+2. Navigate to the frontend repository and follow instructions.
+
+## License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
